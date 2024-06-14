@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        height: 250px;
+        width: 450px;
+        margin-left: 500px;
+        margin-top: 230px;
+        box-shadow: 0px 0px 10px red;
+        border-radius: 20px;
+    }
+
+    .h1{
+        position: relative;
+        left: 30px;
+        top: 30px;
+       font-size: 40px;
+    }
+    .btn1{
+        height: 40px;
+        width: 40px;
+        background-color: black;
+        color: white;
+        margin-top:60px ;
+        border-radius: 10px;
+        margin-left: 140px;
+        font-weight: bold;
+        font-size: 20px;
+
+
+
+    }
+
+    .btn2{
+        height: 40px;
+        width: 100px;
+        border: 2px solid black;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 20px;
+
+
+    }
+
+    .btn3{
+        height: 40px;
+        width: 40px;
+        background-color: black;
+        color: white;
+        margin-top:60px ;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 20px;
+
+
+    }
+</style>
+<body>
+    <div class="main">
+        <h1 class="h1">Count Inc & Dec Demo</h1>
+        <button class="btn1" onclick="fun1()">+</button>
+        <button class="btn2">1</button>
+        <button class="btn3" onclick="fun2()">-</button>
+    </div>
+   
+
+
+    <script>
+            var  a=document.getElementsByClassName('btn2')[0].innerText;
+             function fun1(){
+             console.log(a);
+             a++;
+             document.getElementsByClassName('btn2')[0].innerText=a;
+        
+
+        }
+
+        // var c;
+        // function seti1(){
+        //    clearInterval(b);
+        //    c=setInterval(fun1,10);
+
+        // }
+
+
+
+
+      var  a=document.getElementsByClassName('btn2')[0].innerText;
+      
+     function fun2(){
+        
+        console.log(a);
+        if(a>0){
+            a--;
+        document.getElementsByClassName('btn2')[0].innerText=a;
+    
+        }
+        
+
+     }
+
+    //  var b;
+    //     function onclick1(){
+    //       clearInterval(c);
+    //        b=setInterval(fun2,10);
+
+    //     }
+        
+      
+    </script>
+
+
+
+
+</body>
+</html>
